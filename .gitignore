@@ -24,3 +24,8 @@ models/
 
 # Logs
 logs/
+
+.claude/
+.env
+.env.local
+*.local.json
