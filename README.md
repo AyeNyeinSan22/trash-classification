@@ -47,8 +47,11 @@ trash-classification/
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Install dependencies
-pip install fastapi uvicorn python-multipart pillow torch torchvision
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
+
+# Or manually install:
+pip install fastapi uvicorn python-multipart pillow torch torchvision ultralytics
 
 # Start backend server
 python backend/app.py
@@ -98,6 +101,8 @@ python train_all_categories.py
 ### Backend
 - **FastAPI** - High-performance web framework
 - **PyTorch** - Deep learning framework
+- **Ultralytics YOLOv8** - State-of-the-art object detection and classification
+- **Pillow** - Image processing
 - **Pillow** - Image processing
 
 ### Frontend
